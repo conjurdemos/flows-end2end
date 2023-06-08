@@ -1,5 +1,7 @@
 # End-to-End Provisioning/Deprovisioning Flows for CyberArk Privilege Cloud and Conjur Cloud
 
+NOTE: The admin user that executes REST calls to Privilege Cloud and Conjur Cloud has full admin rights in both solutions. Its password can be viewed as plaintext in  execution logs for these Flows. There is currently no way to mask or otherwise obfuscate that value. Please be advised and take appropriate caution in granting access to your Flows tenant.
+
 ## cd into Setup directory:
 - Convert flows for your tenant(s)
   - Edit the convert-flows-for-tenant.sh script
