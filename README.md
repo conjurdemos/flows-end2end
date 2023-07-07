@@ -9,7 +9,10 @@
 - In each Flow's runtime settings, check 'Anonymous' under 'API access' and Save
 - For both the End2End Flows:
   - Click the second connector and use its map to access the Webhook body.
-  - Cut/past the contents of webhook-schema.json as the body of the webhook input parameters and save.
+  - Cut/paste the contents of webhook-schemas/end2end-webhook-schema.json as the body of the webhook input parameters and save.
+- For the GetAuthTokens-SaaS Flow:
+  - Click the second connector and use its map to access the Webhook body.
+  - Cut/paste the contents of webhook-schemas/getauthtokens-webhook-schema.json as the body of the webhook input parameters and save.
 - Add policy templates to data store for Flows in Flows tenant:
   - Create keys with same names as policy filenames.
   - Paste the file contents directly as values.
@@ -50,5 +53,3 @@ Webhook parameters are same as for the Provisioning workflow.
 - deletes AppID user
 - deletes Safe
 - sends confirmation email
-
-
